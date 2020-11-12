@@ -1,0 +1,15 @@
+.Order {
+  padding: 0 23%;
+
+  .OrderTitleForm {
+    width: 100%;
+    margin-top: 150px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+
+    .OrderTitle {
+      top: 150px;
+      font-weight: 900;
+    }
+  }
+}

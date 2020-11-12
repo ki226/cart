@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "모짜렐라 카우",
+      "price": 25000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1595313738794i0.jpg"
+    },
+    {
+      "id": 2,
+      "name": "아보카도 1개",
+      "price": 2000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1470791120657i0.jpg"
+    },
+    {
+      "id": 3,
+      "name": "오븐에 구운 연어",
+      "price": 19000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1596609911765i0.jpg"
+    },
+    {
+      "id": 4,
+      "name": "모짜렐라 카우",
+      "price": 25000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1595313738794i0.jpg"
+    },
+    {
+      "id": 5,
+      "name": "아보카도 1개",
+      "price": 2000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1470791120657i0.jpg"
+    },
+    {
+      "id": 6,
+      "name": "오븐에 구운 연어",
+      "price": 19000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1596609911765i0.jpg"
+    },
+    {
+      "id": 7,
+      "name": "모짜렐라 카우",
+      "price": 25000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1595313738794i0.jpg"
+    },
+    {
+      "id": 8,
+      "name": "아보카도 1개",
+      "price": 2000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1470791120657i0.jpg"
+    },
+    {
+      "id": 9,
+      "name": "오븐에 구운 연어",
+      "price": 19000,
+      "img": "https://img-cf.kurly.com/shop/data/goods/1596609911765i0.jpg"
+    }
+  ]
+}
