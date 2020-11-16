@@ -9,11 +9,10 @@ export default function reducer(state = initState, action) {
   const { type, payload } = action;
   switch (type) {
     case ADD_CART: {
-      const selectProduct = [];
       return {
         ...state,
         totalAmount: state.totalAmount + 1,
-        items: selectProduct.concat(payload),
+        items: state.items.concat(payload),
       };
     }
     case REMOVE_CART:

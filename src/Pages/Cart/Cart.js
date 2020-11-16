@@ -9,6 +9,7 @@ import CartContainerComponent from "../../Components/ContainerComponents/CartCon
 import ProductContainerComponent from "../../Components/ContainerComponents/ProductContainerComponent";
 import CountContainerComponent from "../../Components/ContainerComponents/CountContainerComponent";
 import CountDispatchContainer from "../../Containers/CountDispatchContainer/CountDispatchContainer";
+import CartDispatchContainer from "../../Containers/CartDispatchContainer/CartDispatchContainer";
 import "./Cart.scss";
 
 const Cart = () => {

@@ -1,0 +1,23 @@
+.addCartBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 122px;
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  span {
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+  }
+}

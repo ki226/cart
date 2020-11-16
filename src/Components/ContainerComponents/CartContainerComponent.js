@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import ProductList from "../ProductList/ProductList";
+import nav from "../ProductList/ProductList";
 
 const countMapStateToProps = (state) => {
   return {
@@ -8,4 +8,4 @@ const countMapStateToProps = (state) => {
   };
 };
 
-export default connect(countMapStateToProps)(ProductList);
+export default connect(countMapStateToProps)(nav);

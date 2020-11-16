@@ -1,9 +1,11 @@
 import React from "react";
+import CartDispatchContainer from "../../Containers/CartDispatchContainer/CartDispatchContainer";
 import "./ProductList.scss";
 import cartIcon from "../../Images/cart-icon.png";
 
 const ProductList = (props) => {
-  const { products, addCart } = props;
+  const { products, addCart, setCount } = props;
+  console.log(products);
 
   return (
     <div className="ProductList">
@@ -20,10 +22,7 @@ const ProductList = (props) => {
               <p className="productPrice">
                 {product.price.toLocaleString()} 원
               </p>
-              <div className="addCartBtn" onClick={() => addCart(product)}>
-                <img alt="addCartBtn" src={cartIcon}></img>
-                <span>장바구니 담기</span>
-              </div>
+              <CartDispatchContainer products={product} />
             </div>
           );
         })}
