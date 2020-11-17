@@ -1,11 +1,12 @@
 import { connect } from "react-redux";
 import nav from "../ProductList/ProductList";
+import OrderMenu from "../OrderMenu/OrderMenu";
 
-const countMapStateToProps = (state) => {
+const OrderMenuMapStateToProps = (state) => {
   return {
     cartItem: state.cart["items"],
     amount: state.cart["totalAmount"],
   };
 };
 
-export default connect(countMapStateToProps)(nav);
+export default connect(OrderMenuMapStateToProps)(OrderMenu);

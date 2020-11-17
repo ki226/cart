@@ -1,0 +1,14 @@
+.OrderMenu {
+  margin-top: 50px;
+  border: 1px solid black;
+
+  .OrderMenuLayout {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fffef8;
+    margin: 0;
+    padding: 0;
+  }
+}

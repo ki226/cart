@@ -5,7 +5,7 @@ import { persistStore } from "redux-persist";
 import { setProduct } from "../../Actions/ProductAction";
 import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "../../Store/configureStore";
-import CartContainerComponent from "../../Components/ContainerComponents/CartContainerComponent";
+import CartContainerComponent from "../../Components/ContainerComponents/OrderMenuContainerComponent";
 import ProductContainerComponent from "../../Components/ContainerComponents/ProductContainerComponent";
 import CountContainerComponent from "../../Components/ContainerComponents/CountContainerComponent";
 import CountDispatchContainer from "../../Containers/CountDispatchContainer/CountDispatchContainer";

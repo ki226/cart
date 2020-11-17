@@ -3,8 +3,7 @@ import "./AddCartBtn.scss";
 import cartIcon from "../../Images/cart-icon.png";
 
 const addCartBtn = (props) => {
-  const { products, addCart, setCount } = props;
-  console.log(products);
+  const { products, addCart } = props;
 
   return (
     <div className="addCartBtn" onClick={() => addCart(products)}>

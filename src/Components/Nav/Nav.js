@@ -6,11 +6,11 @@ import cartIcon from "../../Images/cart-icon.png";
 const Nav = (props) => {
   const { amount } = props;
 
-  console.log(amount);
-
   return (
     <nav>
-      <span>wemarkett</span>
+      <Link to="/">
+        <span>wemarkett</span>
+      </Link>
       <div className="cartImg">
         <Link to="/order">
           <img alt="cart" src={cartIcon}></img>

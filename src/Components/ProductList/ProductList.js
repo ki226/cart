@@ -1,11 +1,9 @@
 import React from "react";
 import CartDispatchContainer from "../../Containers/CartDispatchContainer/CartDispatchContainer";
 import "./ProductList.scss";
-import cartIcon from "../../Images/cart-icon.png";
 
 const ProductList = (props) => {
-  const { products, addCart, setCount } = props;
-  console.log(products);
+  const { products } = props;
 
   return (
     <div className="ProductList">

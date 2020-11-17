@@ -4,25 +4,29 @@ import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "../../Store/configureStore";
 import CountContainerComponent from "../../Components/ContainerComponents/CountContainerComponent";
+import OrderMenuContainerComponent from "../../Components/ContainerComponents/OrderMenuContainerComponent";
+import NavContainerComponent from "../../Components/ContainerComponents/NavContainerComponent";
+import OrderListContainerComponent from "../../Components/ContainerComponents/OrderListContainerComponent";
 import DispatchComponent from "../../Containers/CountDispatchContainer/CountDispatchContainer";
-import OrderItems from "../../Components/OrderItems/OrderItems";
+import OrderItems from "../../Components/OrderMenu/OrderMenu";
 import "./Order.scss";
 
 const Order = () => {
   const store = configureStore();
-  // const persistor = persistStore(store);
+  const persistor = persistStore(store);
 
   return (
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}> */}
-      <div className="Order">
-        <CountContainerComponent />
-        <div className="OrderTitleForm">
-          <h2 className="OrderTitle">장바구니</h2>
+      <PersistGate loading={null} persistor={persistor}>
+        <div className="Order">
+          <NavContainerComponent />
+          <div className="OrderTitleForm">
+            <h2 className="OrderTitle">장바구니</h2>
+          </div>
+          <OrderMenuContainerComponent />
+          <OrderListContainerComponent />
         </div>
-        <OrderItems />
-      </div>
-      {/* </PersistGate> */}
+      </PersistGate>
     </Provider>
   );
 };
