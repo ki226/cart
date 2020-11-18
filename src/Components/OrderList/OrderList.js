@@ -16,10 +16,15 @@ const OrderList = (props) => {
                 <img className="productImg" src={item.img} alt={item.name} />
               </li>
               <li className="productInfo">
-                <h5>{item.name}</h5>
-                <span>{item.price.toLocaleString()}</span>
+                <span className="productName">{item.name}</span>
+                <span className="productPrice">
+                  {item.price.toLocaleString()}
+                </span>
               </li>
-              <li></li>
+              <li className="amountBox">
+                <button className="minus">-</button>
+                <button className="plus">+</button>
+              </li>
             </ul>
           );
         })}

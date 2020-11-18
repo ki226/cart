@@ -1,8 +1,9 @@
 .OrderList {
   margin-top: 50px;
-  border: 1px solid black;
+  border: 1px solid #7f8c8d;
 
   .OrderListLayout {
+    border: 1px solid #ecf0f1;
     height: 70px;
     display: flex;
     justify-content: space-around;
@@ -14,6 +15,36 @@
     .productImg {
       width: 56px;
       height: 56px;
+    }
+
+    .productInfo {
+      height: 56px;
+      display: flex;
+      flex-direction: column;
+
+      .productName {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .productPrice {
+        font-size: 15px;
+      }
+    }
+
+    .amountBox {
+      display: flex;
+
+      button {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background: black;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        outline: none;
+      }
     }
   }
 }
