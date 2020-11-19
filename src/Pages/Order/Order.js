@@ -3,12 +3,9 @@ import { Provider } from "react-redux";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "../../Store/configureStore";
-import CountContainerComponent from "../../Components/ContainerComponents/CountContainerComponent";
 import OrderMenuContainerComponent from "../../Components/ContainerComponents/OrderMenuContainerComponent";
 import NavContainerComponent from "../../Components/ContainerComponents/NavContainerComponent";
 import OrderListContainerComponent from "../../Components/ContainerComponents/OrderListContainerComponent";
-import DispatchComponent from "../../Containers/CountDispatchContainer/CountDispatchContainer";
-import OrderItems from "../../Components/OrderMenu/OrderMenu";
 import "./Order.scss";
 
 const Order = () => {

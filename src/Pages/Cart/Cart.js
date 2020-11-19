@@ -5,11 +5,8 @@ import { persistStore } from "redux-persist";
 import { setProduct } from "../../Actions/ProductAction";
 import { PersistGate } from "redux-persist/integration/react";
 import configureStore from "../../Store/configureStore";
-import CartContainerComponent from "../../Components/ContainerComponents/OrderMenuContainerComponent";
+import NavContainerComponent from "../../Components/ContainerComponents/NavContainerComponent";
 import ProductContainerComponent from "../../Components/ContainerComponents/ProductContainerComponent";
-import CountContainerComponent from "../../Components/ContainerComponents/CountContainerComponent";
-import CountDispatchContainer from "../../Containers/CountDispatchContainer/CountDispatchContainer";
-import CartDispatchContainer from "../../Containers/CartDispatchContainer/CartDispatchContainer";
 import "./Cart.scss";
 
 const Cart = () => {
@@ -27,7 +24,7 @@ const Cart = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <div className="Cart">
-          <CountContainerComponent />
+          <NavContainerComponent />
           <div className="titleForm">
             <h2 className="title">상품 목록</h2>
           </div>
