@@ -21,7 +21,7 @@ const OrderList = (props) => {
                   {item.price.toLocaleString()}
                 </span>
               </li>
-              <li className="amountBox">
+              <li className="amountControl">
                 <button className="minus">-</button>
                 <button className="plus">+</button>
               </li>
