@@ -1,9 +1,10 @@
 import React from "react";
-import CartDispatchContainer from "../../Containers/CartDispatchContainer/CartDispatchContainer";
+import { useSelector } from "react-redux";
+import AddCartBtn from "../AddCartBtn/AddCartBtn";
 import "./ProductList.scss";
 
 const ProductList = (props) => {
-  const { products } = props;
+  const products = useSelector((state) => state.product.products);
 
   return (
     <div className="ProductList">
@@ -20,7 +21,7 @@ const ProductList = (props) => {
               <p className="productPrice">
                 {product.price.toLocaleString()} 원
               </p>
-              <CartDispatchContainer products={product} />
+              <AddCartBtn products={product} />
             </div>
           );
         })}

@@ -1,10 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Nav.scss";
 import cartIcon from "../../Images/cart-icon.png";
 
-const Nav = (props) => {
-  const { amount } = props;
+const Nav = () => {
+  const amount = useSelector((state) => state.cart.totalAmount);
 
   return (
     <nav>
