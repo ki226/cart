@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import AddCartBtn from "../AddCartBtn/AddCartBtn";
 import "./ProductList.scss";
 
-const ProductList = (props) => {
+const ProductList = () => {
   const products = useSelector((state) => state.product.products);
 
   return (

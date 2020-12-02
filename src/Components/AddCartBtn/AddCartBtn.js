@@ -4,8 +4,7 @@ import { addCart } from "../../Actions/CartAction";
 import "./AddCartBtn.scss";
 import cartIcon from "../../Images/cart-icon.png";
 
-const AddCartBtn = (props) => {
-  const { products } = props;
+const AddCartBtn = ({ products }) => {
   const dispatch = useDispatch();
 
   return (
