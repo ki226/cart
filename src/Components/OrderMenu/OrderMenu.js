@@ -1,14 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./OrderMenu.scss";
 
-const OrderMenu = (props) => {
-  const { amount, items } = props;
+const OrderMenu = () => {
+  const amount = useSelector((state) => state.cart.totalAmount);
+
   return (
     <div className="OrderMenu">
       <ul className="OrderMenuLayout">
         <li>
           <input type="checkbox" />
-          전체선택 &nbsp; 1/{amount}
+          전체선택 &nbsp; 0/{amount}
         </li>
         <li>상품정보</li>
         <li>수량</li>

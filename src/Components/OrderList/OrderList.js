@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./OrderList.scss";
 
-const OrderList = (props) => {
-  const { cartItem } = props;
+const OrderList = () => {
+  const cartItem = useSelector((state) => state.cart.items);
+
   return (
     <div className="OrderList">
       {cartItem &&
