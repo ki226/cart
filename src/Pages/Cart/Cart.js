@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { setProduct } from "../../Actions/ProductAction";
 import Nav from "../../Components/Nav/Nav";
 import ProductList from "../../Components/ProductList/ProductList";
+import { MOCK_URL } from "../../Config/Config";
 import "./Cart.scss";
 
 const Cart = () => {
@@ -12,7 +13,7 @@ const Cart = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:3000/Mock/MockData.json`,
+      url: MOCK_URL,
     }).then((res) => dispatch(setProduct(res.data.products)));
   });
 
